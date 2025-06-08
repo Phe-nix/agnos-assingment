@@ -4,7 +4,7 @@ import { connectWebSocket } from "@/storage/websocket";
 import React, { useEffect, useState } from "react";
 
 export default function Staff() {
-  const [data, setData] = useState({});
+  const [data, setData] = useState<any>({});
 
   useEffect(() => {
     connectWebSocket((msg) => {
