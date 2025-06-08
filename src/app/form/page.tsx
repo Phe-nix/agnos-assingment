@@ -8,7 +8,7 @@ import { useActionState, useEffect, useState, useRef } from "react";
 import { useFormStatus } from "react-dom";
 
 export default function Form() {
-  let genderOptions = [
+  const genderOptions = [
     {
       label: "Select Gender",
       value: "",
@@ -23,7 +23,7 @@ export default function Form() {
     },
   ];
 
-  let preferredLanguageOptions = [
+  const preferredLanguageOptions = [
     {
       label: "Select Preferred Language",
       value: "",
