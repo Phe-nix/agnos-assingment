@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
 ## Getting Started
+Welcome to the Agnos Assignment project! This repository contains a web application built with Next.js and a websocket server for real-time features. The project demonstrates modern web development practices, including client-server communication, live updates, and easy deployment options. Follow the instructions below to set up and run the application locally or deploy it online.
+## Instructions
 
-First, run the development server:
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/agnos-assingment.git
+    cd agnos-assingment
+    ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+2. Install dependencies and start the main web application:
+    ```bash
+    npm install
+    npm run dev
+    ```
+
+3. In a separate terminal, start the websocket server:
+    ```bash
+    cd server
+    npm install
+    node index.js
+    ```
+
+4. Access the application at [http://localhost:3000](http://localhost:3000) or use the deployed link provided above.
+
+5. Make sure the websocket server is running before using features that require real-time communication.
+## Project Structure
+
+```
+agnos-assingment/
+├── README.md
+├── package.json
+├── next.config.js
+├── src/
+│   └── ... (Next.js application pages)
+├── public/
+│   └── ... (Static assets)
+├── server/
+│   ├── index.js   # WebSocket server entry point
+│   └── package.json
+└── ... (other configuration and source files)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- The `src/` directory contains the main web application built with Next.js.
+- The `server/` directory contains the websocket server for real-time features.
+- Configuration files and dependencies are managed at the root and within the `server/` directory.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
